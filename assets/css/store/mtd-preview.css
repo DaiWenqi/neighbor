@@ -1,0 +1,443 @@
+/*
+ * author  : HQY
+ * date    : 2016-11-07
+ * email   : hqy321@gmail.com
+*/
+.fn-dialog {
+  width: auto!important;
+  background: rgba(0, 0, 0, 0.8);
+}
+.fn-dialog .fn-toast-bd {
+  padding: 0.4rem 0.8rem;
+  color: #fff;
+}
+.fn-dialog .fn-toast-time {
+  color: #fff;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../../fonts/store/iconfont.eot?v=1478488196889');
+  src: url('../../fonts/store/iconfont.eot?#iefix&v=1478488196889') format('embedded-opentype'), url('../../fonts/store/iconfont.woff?v=1478488196889') format('woff'), url('../../fonts/store/iconfont.ttf?v=1478488196889') format('truetype'), url('../../fonts/store/iconfont.svg?v=1478488196889#iconfont') format('svg');
+}
+.iconfont {
+  /* autoprefixer: off */
+  display: inline-block;
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: iconfont !important;
+}
+.iconfont:before {
+  display: block;
+}
+.fn-store-bottom-nav {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.24rem 0;
+  max-width: 1024px;
+  z-index: 200;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  background: #fff;
+  border-top: 0.04rem solid #d5d5d5;
+  margin: 0 auto;
+}
+.fn-store-bottom-nav .item {
+  float: left;
+  text-align: center;
+  padding: 0.12rem 0;
+  font-size: 0.48rem;
+  display: block;
+  position: relative;
+}
+.fn-store-bottom-nav .item span {
+  padding-top: 0.2rem;
+  display: block;
+}
+.fn-store-bottom-nav .item .line:before,
+.fn-store-bottom-nav .item .line:after {
+  display: block;
+  content: '';
+  width: 0.96rem;
+  height: 0.08rem;
+  background: #d5d5d5;
+  margin: 0 auto 0.08rem;
+}
+.fn-store-bottom-nav .item .item-list {
+  width: 90%;
+  position: absolute;
+  bottom: 2rem;
+  left: 4.8%;
+  border: 0.04rem solid #d5d5d5;
+  border-radius: 0.2rem;
+  z-index: 1;
+  background: #fff;
+  color: #333;
+  display: none;
+}
+.fn-store-bottom-nav .item .item-list:before,
+.fn-store-bottom-nav .item .item-list:after {
+  display: block;
+  content: '';
+  border-style: solid solid dotted solid;
+  border-width: 0.2rem;
+  width: 0rem;
+  height: 0rem;
+  margin-left: -0.2rem;
+}
+.fn-store-bottom-nav .item .item-list:before {
+  border-color: #d5d5d5 transparent transparent transparent;
+  position: absolute;
+  bottom: -0.44rem;
+  left: 50%;
+}
+.fn-store-bottom-nav .item .item-list:after {
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  bottom: -0.4rem;
+  left: 50%;
+}
+.fn-store-bottom-nav .item .item-list .list {
+  padding: 0.4rem 0;
+  text-align: center;
+  border-bottom: 0.04rem solid #d5d5d5;
+  position: relative;
+  display: block;
+}
+.fn-store-bottom-nav .item .item-list .list:last-child {
+  border-bottom: 0;
+}
+.fn-store-bottom-nav .item-theme {
+  color: #c20053;
+}
+.fn-store-bottom-nav .item-active .item-list {
+  display: block;
+}
+@font-face {
+  font-family: 'store-icon';
+  src: url('../../fonts/store/iconfont.eot?v=1478488196889');
+  src: url('../../fonts/store/iconfont.eot?#iefix&v=1478488196889') format('embedded-opentype'), url('../../fonts/store/iconfont.woff?v=1478488196889') format('woff'), url('../../fonts/store/iconfont.ttf?v=1478488196889') format('truetype'), url('../../fonts/store/iconfont.svg?v=1478488196889#iconfont') format('svg');
+}
+.fn-container {
+  padding-bottom: 55px;
+}
+.store-icon {
+  /* autoprefixer: off */
+  display: inline-block;
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: store-icon !important;
+}
+.store-icon:before {
+  display: block;
+}
+.iconfont {
+  line-height: inherit;
+}
+.mt2 {
+  margin-top: 2%;
+}
+.fn-container {
+  background: #eee;
+}
+.fn-container i {
+  font-style: normal;
+}
+.fn-container .header {
+  height: 45px;
+  line-height: 44px;
+  background: #fff;
+  position: relative;
+  font-size: 0.72rem;
+  border-bottom: 0.04rem solid #d5d5d5;
+}
+.fn-container .header .top-back {
+  position: absolute;
+  top: 0;
+  left: 2%;
+}
+.fn-container .header .top-back span {
+  font-size: 0.64rem;
+  vertical-align: top;
+  display: inline-block;
+}
+.fn-container .header .top-back i {
+  line-height: 1.76rem;
+  font-size: 0.96rem;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: -0.08rem;
+}
+.fn-container .header .title {
+  width: 60%;
+  font-size: 100%;
+  font-weight: normal;
+  margin: 0 auto;
+  text-align: center;
+}
+.fn-container .header .search-box {
+  width: 60%;
+  height: 70%;
+  margin: 0 auto;
+  border-radius: 0.2rem;
+  position: relative;
+  top: 15%;
+  left: 2%;
+  background: #eee;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #666;
+}
+.fn-container .header .search-box i {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  float: left;
+  width: 1.2rem;
+  text-align: right;
+}
+.fn-container .header .search-box input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 0;
+  text-indent: 0.2rem;
+  margin-right: 0.2rem;
+  background: inherit;
+  outline: none;
+}
+.fn-container .header .h_share {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  font-size: 0.88rem;
+}
+.fn-container .rb-nav {
+  position: fixed;
+  right: 0.8rem;
+  bottom: 2.32rem;
+  z-index: 200;
+}
+.fn-container .rb-nav .go-top {
+  display: block;
+  line-height: .8rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  font-size: .6rem;
+  border: 0.04rem #8f8f8f solid;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: .8rem;
+  text-align: center;
+}
+.fn-container .header .more-info {
+  height: 45px;
+  line-height: 45px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 3%;
+  font-size: 24px;
+}
+.fn-container .header .more-sub {
+  position: absolute;
+  top: 32px;
+  right: 3%;
+  width: 200px;
+  height: 200px;
+  padding-top: 10px;
+  margin-right: -8px;
+  width: 40%;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: opacity .2s;
+  -o-transition: opacity .2s;
+  transition: opacity .2s;
+}
+.fn-container .header .more-sub-show {
+  opacity: 1;
+  z-index: 100;
+}
+.fn-container .header .more-sub:before {
+  display: block;
+  content: '';
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  border-color: transparent transparent rgba(65, 70, 72, 0.9) transparent;
+  border-style: dashed dashed solid dashed;
+  border-width: 10px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -10px;
+  right: 8px;
+}
+.fn-container .header .more-sub .item {
+  line-height: 2.8;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(65, 70, 72, 0.9);
+  color: #d5d5d5;
+  font-size: 14px;
+}
+.fn-container .header .more-sub .item:nth-of-type(1) {
+  border-radius: 6px 6px 0 0;
+}
+.fn-container .header .more-sub .item:nth-last-of-type(1) {
+  border-radius: 0 0 6px 6px;
+  border-bottom: none;
+}
+.fn-container .header .more-sub .item i {
+  font-size: 16px;
+  padding: 0 5px;
+}
+.fn-container .fn-store-pic-list {
+  width: 97.3333%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 1.33333% auto;
+}
+.fn-container .fn-store-pic-list.col2 {
+  overflow: hidden;
+}
+.fn-container .fn-store-pic-list.col2 li {
+  width: 49.33333%;
+  float: left;
+}
+.fn-container .fn-store-pic-list.col2 li:nth-child(even) {
+  float: right;
+}
+.fn-container .fn-store-pic-list li .img-box:before {
+  padding-top: 47.463%;
+}
+.fn-store-product-list2 {
+  overflow: hidden;
+  width: 102.3%;
+}
+.fn-store-product-list2 li {
+  width: 33.333%;
+  padding-right: 1.33333%;
+  margin-bottom: 1.33333%;
+  float: left;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.fn-store-product-list2 li .info {
+  background: #fff;
+  padding: 0 3.8185%;
+}
+.fn-store-product-list2 li .txt {
+  font-size: 0.28rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fn-store-product-list2 .ui-price {
+  color: #c20053;
+}
+.fn-store-product-list2 .ui-price .symbol {
+  font-size: 0.24rem;
+}
+.fn-store-product-list2 .ui-price .integer {
+  font-size: 0.28rem;
+}
+.fn-store-product-list2 .ui-price .floating {
+  font-size: 0.24rem;
+}
+.fn-container {
+  overflow: hidden;
+  padding-bottom: 0;
+  line-height: 1.42858;
+}
+.fn-container .img-box {
+  display: block;
+}
+.fn-container .space-t {
+  margin-top: 2.6315%;
+}
+.fn-container .fn-store-title-bar {
+  background: #f9f9f9;
+  font-size: 0.616rem;
+  line-height: 2.125;
+  border-left: 0.1272rem solid #c20053;
+  padding-left: .363636rem;
+}
+.fn-container .fs-txt-area {
+  background: #fff;
+  font-size: 0.528rem;
+  padding: 1.25%;
+}
+.fn-container .sptp-img-box .img {
+  width: 100%;
+}
+.fn-container .m-custom .img-box:before {
+  padding-top: 100%!important;
+}
+.fn-container .fn-price,
+.fn-container .fn-price-sm,
+.fn-container .fn-price-md,
+.fn-container .fn-price-lg,
+.fn-container .fn-price-xl {
+  color: #c70034;
+}
+.fn-container .fn-price:before,
+.fn-container .fn-price-sm:before,
+.fn-container .fn-price-md:before,
+.fn-container .fn-price-lg:before,
+.fn-container .fn-price-xl:before {
+  content: '\00a5';
+}
+.fn-container .fn-price .num,
+.fn-container .fn-price-sm .num,
+.fn-container .fn-price-md .num,
+.fn-container .fn-price-lg .num,
+.fn-container .fn-price-xl .num {
+  margin-left: 0.08rem;
+}
+.fn-container .fn-price-sm:before,
+.fn-container .fn-price-sm .point {
+  font-size: 0.48rem;
+}
+.fn-container .fn-price-sm .num {
+  font-size: 0.48rem;
+}
+.fn-container .fn-price-md:before,
+.fn-container .fn-price-md .point {
+  font-size: 0.48rem;
+}
+.fn-container .fn-price-md .num {
+  font-size: 0.56rem;
+}
+.fn-container .fn-price-lg:before,
+.fn-container .fn-price-lg .point {
+  font-size: 0.48rem;
+}
+.fn-container .fn-price-lg .num {
+  font-size: 0.64rem;
+}
+.fn-container .fn-price-xl:before,
+.fn-container .fn-price-xl .point {
+  font-size: 0.64rem;
+}
+.fn-container .fn-price-xl .num {
+  font-size: 1.12rem;
+}
+
+/*# sourceMappingURL=../map/store/mtd-preview.css.map */

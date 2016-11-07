@@ -1,0 +1,80 @@
+/*
+ * author  : HQY
+ * date    : 2016-11-07
+ * email   : hqy321@gmail.com
+*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../../fonts/job/iconfont.eot?v=1478488196889');
+  src: url('../../fonts/job/iconfont.eot?#iefix&v=1478488196889') format('embedded-opentype'), url('../../fonts/job/iconfont.woff?v=1478488196889') format('woff'), url('../../fonts/job/iconfont.ttf?v=1478488196889') format('truetype'), url('../../fonts/job/iconfont.svg?v=1478488196889#iconfont') format('svg');
+}
+.iconfont {
+  /* autoprefixer: off */
+  display: inline-block;
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: iconfont !important;
+}
+.iconfont:before {
+  display: block;
+}
+input {
+  color: #333;
+  border: none;
+}
+em {
+  font-style: normal;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.fn-container {
+  min-height: 100%;
+}
+select {
+  font-size: 14px;
+}
+li {
+  list-style: none;
+}
+.fn-container {
+  background: #eee;
+  color: #333;
+  min-height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0.28rem;
+  overflow: hidden;
+}
+.fn-container a {
+  text-decoration: none;
+}
+.fn-m-job-list {
+  text-align: center;
+}
+.fn-m-job-list .item {
+  margin-top: 0.4rem;
+}
+.fn-m-job-list .img-holder {
+  width: 60%;
+  max-width: 3.2rem;
+  margin: 0.4rem auto;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.fn-container {
+  min-height: 100%;
+}
+
+/*# sourceMappingURL=../map/job/index.css.map */

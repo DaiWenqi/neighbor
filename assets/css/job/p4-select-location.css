@@ -1,0 +1,86 @@
+/*
+ * author  : HQY
+ * date    : 2016-11-07
+ * email   : hqy321@gmail.com
+*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../../fonts/job/iconfont.eot?v=1478488196889');
+  src: url('../../fonts/job/iconfont.eot?#iefix&v=1478488196889') format('embedded-opentype'), url('../../fonts/job/iconfont.woff?v=1478488196889') format('woff'), url('../../fonts/job/iconfont.ttf?v=1478488196889') format('truetype'), url('../../fonts/job/iconfont.svg?v=1478488196889#iconfont') format('svg');
+}
+.iconfont {
+  /* autoprefixer: off */
+  display: inline-block;
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: iconfont !important;
+}
+.iconfont:before {
+  display: block;
+}
+input {
+  color: #333;
+  border: none;
+}
+em {
+  font-style: normal;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.fn-container {
+  min-height: 100%;
+}
+select {
+  font-size: 14px;
+}
+li {
+  list-style: none;
+}
+.fn-container {
+  background: #eee;
+  color: #333;
+  min-height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0.28rem;
+  overflow: hidden;
+}
+.fn-container a {
+  text-decoration: none;
+}
+.fn-m-job-select .title {
+  padding: 0.4rem 0.72rem;
+}
+.fn-m-job-select .list {
+  background: #fff;
+}
+.fn-m-job-select .list li {
+  padding: 0.6rem 0.8rem;
+  overflow: hidden;
+  border-bottom: 0.04rem solid #e5e5e5;
+}
+.fn-m-job-select .list li:last-child {
+  border-bottom: none;
+}
+.fn-m-job-select .list li.cur .iconfont {
+  display: block;
+}
+.fn-m-job-select .list li .txt {
+  float: left;
+}
+.fn-m-job-select .list li .iconfont {
+  float: right;
+  display: none;
+  color: #c20053;
+}
+
+/*# sourceMappingURL=../map/job/p4-select-location.css.map */

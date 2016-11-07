@@ -1,0 +1,204 @@
+/*
+ * author  : HQY
+ * date    : 2016-11-07
+ * email   : hqy321@gmail.com
+*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../../fonts/job/iconfont.eot?v=1478488196889');
+  src: url('../../fonts/job/iconfont.eot?#iefix&v=1478488196889') format('embedded-opentype'), url('../../fonts/job/iconfont.woff?v=1478488196889') format('woff'), url('../../fonts/job/iconfont.ttf?v=1478488196889') format('truetype'), url('../../fonts/job/iconfont.svg?v=1478488196889#iconfont') format('svg');
+}
+.iconfont {
+  /* autoprefixer: off */
+  display: inline-block;
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: iconfont !important;
+}
+.iconfont:before {
+  display: block;
+}
+input {
+  color: #333;
+  border: none;
+}
+em {
+  font-style: normal;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.fn-container {
+  min-height: 100%;
+}
+select {
+  font-size: 14px;
+}
+li {
+  list-style: none;
+}
+.fn-container {
+  background: #eee;
+  color: #333;
+  min-height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0.28rem;
+  overflow: hidden;
+}
+.fn-container a {
+  text-decoration: none;
+}
+.fn-container .button-area {
+  padding: 0.56rem 0.96rem 0.96rem 0.96rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+.fn-container .button-area .button {
+  background: #c20053;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #fff;
+  padding: 0.4rem 0;
+  border-radius: 0.2rem;
+}
+.fn-container .button-area .button.odd {
+  margin-top: 0.8rem;
+  background: #fff;
+  color: #c20053;
+}
+.fn-container .button-area .button.b {
+  width: 100%;
+}
+.fn-container .fn-m-job-input-area {
+  margin: 0.4rem 0 0 0;
+  background: #fff;
+}
+.fn-container .fn-m-job-input-area .ui-dl {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 0.04rem solid #d5d5d5;
+  padding: 0.4rem 0;
+  position: relative;
+}
+.fn-container .fn-m-job-input-area .ui-dl .dt {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: right;
+}
+.fn-container .fn-m-job-input-area .ui-dl .dd {
+  -webkit-box-flex: 6;
+  -webkit-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  padding-left: 0.4rem;
+}
+.fn-container .fn-m-job-input-area .ui-dl .dd input {
+  border: none;
+  width: 50%;
+}
+.fn-container .fn-m-job-input-area .ui-dl .dd .iconfont {
+  position: absolute;
+  right: 1.6rem;
+  bottom: 0.4rem;
+  color: #cfcfcf;
+}
+.fn-container .fn-m-job-input-area .ui-dl .dd .J-job-input {
+  padding-right: 2.4rem;
+}
+.fn-container .fn-m-job-input-area .ui-dl .dd .J-job-input input {
+  width: 100%;
+}
+.land {
+  margin-top: 0.92rem;
+  height: auto;
+  overflow: hidden;
+  border-top: 0.04rem solid #D5D5D5;
+}
+.land ul {
+  display: block;
+  margin-bottom: 1rem;
+  background: #fff;
+  position: relative;
+}
+.land ul li {
+  display: block;
+  line-height: 2rem;
+  border-bottom: 0.04rem solid #D5D5D5;
+  overflow: hidden;
+}
+.land ul li .l-menu {
+  display: block;
+  width: 3.2rem;
+  float: left;
+  text-indent: 0.2rem;
+}
+.land ul li input {
+  line-height: 0.88rem;
+  float: left;
+  margin-top: 0.52rem;
+  width: 70%;
+}
+.land ul li em {
+  display: block;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAIAAABvFaqvAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAsSAAALEgHS3X78AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNy8xMy8xNgTXy8QAAAGESURBVDiNtZVBj7MgEIZHQomHmsjBAzVN///P0tRwsAkYeyBTonuYDesK4n6H772ImfA4zgwvxbquEAkRjTHv99s5570vikIIcblcrterlFIIEW8pdiBE1Fpba5MfIEkplVI73C/QNE1d1y3LcoQIYozd73cpZQI0juMwDKeIrdq2bZrmG00Pa+2/UgBgGAZr7Q8IEfu+p/emadq2/Xsifd8j4jdIax3qIoTIs4gSKr0si9YaADh1epst5RXWMeX1em1DxhilFA8/ecoKlOfzudtireXzPMf5x6wMBQDmeebOuWQttixaHFEAwDnHvffJ2I6VoQCA954dxXbKnBgS55x/Pp9kLNRlXdejPv5QyrJMguLqZlhlWfKqquLGxZT8fFVVxeq6PqUE1jiOybmv65oLIaSUYbjz85LMi6yOA4BSapomOm6ImPcTCtFBBQDGmFIKgh8ZY7quO9qc0ePxIHtjIb1T94h1u92CSf4HqyWR+W+NJda5+W9x2+sIAGh0M9fRFyv7O6Ps4qNlAAAAAElFTkSuQmCC");
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  width: 0.6rem;
+  height: 0.6rem;
+  position: absolute;
+  top: 0.72rem;
+  right: 0.2rem;
+}
+.land .btn {
+  display: block;
+  width: 90%;
+  margin: 0 5% 0 5%;
+  background: #C20053;
+  border-radius: 0.16rem;
+  line-height: 1.6rem;
+  color: #fff;
+  border: none;
+  text-align: center;
+}
+.land .pass {
+  display: block;
+  wdith: 95%;
+  text-align: right;
+  margin: 5% 5% 0 0;
+  color: #666666;
+}
+.land .register {
+  width: 20%;
+  border: 0.04rem solid #C20053;
+  border-radius: 0.08rem;
+  line-height: 1.68rem;
+  color: #C20053;
+  text-align: center;
+  margin: 10% 40% 1% 40%;
+}
+.land .register a {
+  color: #C20053;
+}
+
+/*# sourceMappingURL=../map/job/land.css.map */

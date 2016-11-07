@@ -1,0 +1,139 @@
+/*
+ * author  : HQY
+ * date    : 2016-11-07
+ * email   : hqy321@gmail.com
+*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../../fonts/job/iconfont.eot?v=1478488196889');
+  src: url('../../fonts/job/iconfont.eot?#iefix&v=1478488196889') format('embedded-opentype'), url('../../fonts/job/iconfont.woff?v=1478488196889') format('woff'), url('../../fonts/job/iconfont.ttf?v=1478488196889') format('truetype'), url('../../fonts/job/iconfont.svg?v=1478488196889#iconfont') format('svg');
+}
+.iconfont {
+  /* autoprefixer: off */
+  display: inline-block;
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: iconfont !important;
+}
+.iconfont:before {
+  display: block;
+}
+input {
+  color: #333;
+  border: none;
+}
+em {
+  font-style: normal;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.fn-container {
+  min-height: 100%;
+}
+select {
+  font-size: 14px;
+}
+li {
+  list-style: none;
+}
+.fn-container {
+  background: #eee;
+  color: #333;
+  min-height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0.28rem;
+  overflow: hidden;
+}
+.fn-container a {
+  text-decoration: none;
+}
+.fn-container .button-area {
+  padding: 0.56rem 0.96rem 0.96rem 0.96rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+.fn-container .button-area .button {
+  background: #c20053;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #fff;
+  padding: 0.4rem 0;
+  border-radius: 0.2rem;
+}
+.fn-container .button-area .button.odd {
+  margin-top: 0.8rem;
+  background: #fff;
+  color: #c20053;
+}
+.fn-container .button-area .button.b {
+  width: 100%;
+}
+.fn-container .fn-m-job-arrow-bar {
+  background: #fff;
+  border-radius: 0.2rem;
+  margin: 0.4rem 0.96rem 0 0.96rem;
+  padding: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.fn-container .fn-m-job-arrow-bar .left .iconfont {
+  vertical-align: baseline;
+  font-size: 0.72rem;
+}
+.fn-container .fn-m-job-arrow-bar .right .iconfont {
+  position: relative;
+  top: 0.16rem;
+}
+.fn-container .ui-wrap {
+  background: #fff;
+  margin: 0.4rem 0.4rem 0 0.4rem;
+  padding: 0.6rem;
+}
+.fn-container .personal-information {
+  color: #747474;
+}
+.fn-container .personal-information h3 {
+  font-weight: 700;
+  color: #000;
+  padding: 0.4rem 0;
+}
+.fn-container .personal-information p {
+  padding-bottom: 0.4rem;
+}
+.fn-container .personal-information li {
+  padding: 0.4rem 0;
+  border-top: 0.04rem solid #d5d5d5;
+}
+.fn-container .job-detal .article h3 {
+  padding: 0.4rem 0;
+}
+.fn-container .button-area {
+  background: #fff;
+  margin-top: 0.4rem;
+}
+
+/*# sourceMappingURL=../map/job/p5-job-details.css.map */

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="applicable-device" content="mobile">
+<meta name="format-detection" content="telephone=no">
+<script>if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) { location.href = location.protocol + '//m.feiniu.com/nonsupport.html'; }   </script>
+
+	<link rel="stylesheet" type="text/css" href="../assets/css/common/vendor.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/activity/red-packet-rain.css">
+</head>
+<body>
+
+<div class="fn-container">
+	<div class="moudle">
+	<div class="fn-activity-red-packet-rain full-screen" style="background-color: #e93a4e" fnp="RedPacketRainPlugin" fnp-options="{
+		redPacketPath: '../assets/images/activity/red-packet-rain-red-packet.png',
+		clickedPacketPath: '../assets/images/activity/red-packet-rain-clicked-packet.png',
+		crazyGuyPath: '../assets/images/activity/red-packet-rain-crazy-guy.png',
+		startTipCountdown: 3,
+		countdown: 30,
+		probability: 0.3
+	}">
+		<i class="loading"></i>
+		<div class="layer-bg wrap" style="background-image: url('../assets/images/activity/red-packet-rain-bg.jpg')">
+			<i stage="enter" class="layer enter-tip" style="background-image: url('../assets/images/activity/red-packet-rain-enter-tip.jpg')"></i>
+
+			<div stage="canvas" class="layer canvas dn">
+				<p class="countdown">
+				还剩
+				<span data-role="countdown">30</span>
+				秒
+				</p>
+			</div>
+
+			<div stage="end" class="layer ends-tip dn" style="background-image: url('../assets/images/activity/red-packet-rain-ends-tip.png')">
+				<div class="tip">
+					<p class="title">本场红包雨已经结束</p>
+					<p>下次活动明日10:00开始</p>
+				</div>
+				<a class="btn">返回首页</a>
+			</div>
+
+			<div stage="dialog" class="layer dialog-layer dn" style="background-image: url('../assets/images/activity/red-packet-rain-dialog-bg.png')">
+				<div class="dialog dn" dialog="type-02" style="background-image: url('../assets/images/activity/red-packet-rain-dialog.png')">
+					<span class="close-btn" dialog-role="close">X</span>
+					<div class="content">
+						<div class="text">
+							<p>红包到手就是牛</p>
+							<p>戳中 <span class="ht">杰克琼斯</span> 购物券</p>
+						</div>
+
+						<div class="sub">
+							<span>&yen;</span>
+							<span class="num">10</span>
+							<span>元</span>
+						</div>
+
+						<div class="row btn-list">
+							<div class="btn prs pl col-12"><a dialog-role="close" href="javascript:;">继续戳</a></div>
+							<div class="btn pls pr col-12"><a href="javascript:;">去用券</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="dialog dn" dialog="type-01" style="background-image: url('../assets/images/activity/red-packet-rain-dialog.png')">
+					<span class="close-btn" dialog-role="close">X</span>
+					<div class="content">
+						<div class="text">
+							<p>好可惜，没有戳中红包</p>
+							<p class="tip">下次活动明日10:00开始</p>
+						</div>
+
+						<div class="row btn-list">
+							<div class="btn pl pr col-24"><a dialog-role="close" href="javascript:;">我知道了</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<script type="text/javascript" id="requirejs" base-path="../assets/" src="../assets/require.js"></script>
+<script type="text/javascript" src="../assets/require-config.js"></script>
+
+<script type="text/javascript">
+require(['fnModule/activity/red-packet-rain'], function () {
+	FN.Radio.fire('app:init');
+	const plugin = FN.Plugin.query($('[fnp="RedPacketRainPlugin"]'));
+	let count = 3;
+
+// 倒数结束
+FN.Radio.on('countdownComplete', function () {
+	plugin.toEndsTip();
+});
+
+// 点击红包
+FN.Radio.on('redPacketOpen', function () {
+	if (count <= 0) {
+		return;
+	}
+
+	if (count === 1) {
+		plugin.showDialog('type-01');
+	} else {
+		plugin.showDialog('type-02');
+	}
+
+	count--;
+});
+
+
+FN.Radio.on('countdownStart', function () {
+
+});
+
+
+});
+
+
+
+
+</script>
+</body>
+</html>
